@@ -69,7 +69,7 @@ function App() {
     switch (parseInt(month)) {
       case 1:
         return 'January';
-      case 3:
+      case 9:
         return 'October';
     }
   };
