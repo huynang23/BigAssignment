@@ -1,38 +1,285 @@
-.App {
-  text-align: center;
+.main{
+  position: relative;
+}
+body{
+width: 1920px;
+height: 1080px;
+}
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header{
+  width: 799px;
+  height: 100px;
+  background-color: #897BDA;
+  border-radius: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.btn_add{
+  position: absolute;
+  width: 277px;
+  height: 44px;
+  background-color:  #862796;
+  border-radius: 10px;
+  top: 28px;
+  left: 265px;
+  color : #fff;
+  border: none;
+ 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.container{
+  background-color: #000;
+  width: 799px;
+  min-height: 653px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 20px;
+  padding: 30px;
+  gap: 20px;
+}
+.filter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 739px;
+  height: 50px;
+  color: #fff;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.text_filter{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.year_selector{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 171px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  padding: 15px;
+}
+.icon_year{
+ 
+}
+.chart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 20px;
+  width: 739px;
+  height: 180px;
+  background: #E1CAE4;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 21px;
+  height: 139px;
+  background: #BAA5ED;
+  border: 1px solid #000000;
+  border-radius: 50px;
+
+}
+.chart-bar-fill{
+  width: 21px;
+  height: 70px;
+  border-radius: 0px 0px 50px 50px;
+  background: #3D15A9;
+}
+.chart_item{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 6px 0px;
+  width: 21px;
+  height: 178px;
+
+
+}
+.text_chart{
+
+}
+
+.expense_list{
+  color: #fff;
+}
+.expense_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 739px;
+  height: 134px;
+  background: #575757;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.date{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 114px;
+  height: 114px;
+  background: #1A1A1A;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+
+}
+.month{
+  width: 50px;
+  height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+ 
+
+}
+.year{
+  width: 33px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+}
+.day{
+  width: 28px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+}
+.title_expense{
+
+}
+.title_expense_item{
+  width: 517px;
+  height: 42px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+
+}
+.box_money{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 68px;
+  height: 48px;
+  background: #862796;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+
+}
+.title_money{
+  width: 36px;
+  height: 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
 }
 
-.App-link {
-  color: #61dafb;
+.Add{
+  margin-top: 10px;
+  padding: 20px 30px;
+  gap: 10px;
+  width: 799px;
+  height: 303px;
+  left: 582px;
+  top: 35px;
+  background: #897BDA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: #fff
 }
+.input_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0px;
+  gap: 10px;
+  width: 739px;
+  height: 206px;
+}
+.input_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px;
+  gap: 12px;
+  width: 739px;
+  height: 40px;
+}
+input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 10px;
+  gap: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 570px;
+  height: 40px;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.btn_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 0px;
+  gap: 21px;
+  width: 190px;
+  height: 47px;
+}
+.btn_add2{
+  padding: 8px 16px;
+  gap: 10px;
+  width: 68px;
+  height: 37px;
+  background: #862796;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  border: 1px solid #862796;
+
+}
+.btn_cancel{
+  padding: 8px 16px;
+  gap: 10px;
+  width: 101px;
+  height: 37px;
+  background: #D0D0D0;
+  border: 1px solid #D0D0D0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+
 }
